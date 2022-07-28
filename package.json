@@ -19,5 +19,8 @@
   "homepage": "https://github.com/PeuAlbuquerque/teste-ebac-ui#readme",
   "devDependencies": {
     "cypress": "^9.7.0"
+  },
+  "dependencies": {
+    
   }
 }

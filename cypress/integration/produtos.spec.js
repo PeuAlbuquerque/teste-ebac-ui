@@ -14,7 +14,7 @@ describe('Funcionalidade Página de produtos', () => {
             .click()
     })
 
-    it.only('Deve adcionar um produto ao carrinho', () => {
+    it('Deve adcionar um produto ao carrinho', () => {
         var quantidade = 10
 
         cy.get('[class="product-block grid"]')
@@ -28,5 +28,8 @@ describe('Funcionalidade Página de produtos', () => {
         cy.get('.woocommerce-message').should ('contain', quantidade + ' × “Apollo Running Short” foram adicionados no seu carrinho.')
     })
 
+    it('Deve adcionar produtos ao carrinho - Usando Comando customizado', () => {
+        cy.addProdutos('Aero Daily Fitness Tee', 'M', 'Yel', 2) 
 
+    });
 });

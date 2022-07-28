@@ -29,7 +29,7 @@ describe('Funcionalidade Página de produtos', () => {
     })
 
     it('Deve adcionar produtos ao carrinho - Usando Comando customizado', () => {
-        cy.addProdutos('Aero Daily Fitness Tee', 'M', 'Yel', 2) 
+        cy.addProdutos('Aero Daily Fitness Tee', 'M', 'Yellow', 2) 
 
     });
 });
